@@ -10,10 +10,10 @@ public class MainActivity extends AppCompatActivity {
 
     // TODO: Steps 4 & 8 - Declare member variables here:
 
-    TextView mTextView;
-    Button mTopButton;
-    Button mBottomButton;
-    int mStoryIndex = 1;
+    private TextView mTextView;
+    private Button mTopButton;
+    private Button mBottomButton;
+    private int mStoryIndex = 1;
 
 
     @Override
@@ -32,9 +32,7 @@ public class MainActivity extends AppCompatActivity {
         mTopButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (mStoryIndex == 1) {
-                    setT3();
-                } else if (mStoryIndex == 2) {
+                if (mStoryIndex == 1 || mStoryIndex == 2) {
                     setT3();
                 } else if (mStoryIndex == 3) {
                     setT6();
